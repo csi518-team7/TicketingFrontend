@@ -76,11 +76,10 @@ import { PageEventdetailsComponent } from './page-eventdetails/page-eventdetails
     RouterModule.forRoot([
       { path: "", component: HomepageComponent },
 
-      { path: "schedule", component: TodayEventsComponent },
       { path: "gallery", component: GalleryComponent},
       { path: "parties", component: PartiesComponent},
       { path: "theatre", component: TheatreComponent},
-      //{ path: "schedule", component: PageTodayEventsComponent },
+      { path: "schedule", component: PageTodayEventsComponent },
 
       { path: "signup", component: SignUpComponent },
       { path: "login", component: LoginComponent },
