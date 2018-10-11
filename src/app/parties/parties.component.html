@@ -1,0 +1,103 @@
+<app-global-header></app-global-header>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="body-page">
+
+<div style="text-align:center">
+  <h2 id="heading">Parties</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row" id="ROW-1">
+  <div class="column">
+    <img src="assets/images/party/holiday.jpg" alt="Movie-1" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 78%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/party/beach.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 99%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/party/cocktail.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 44%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/party/christmas.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 43%</p>
+    <hr>
+  </div>
+</div>
+
+<div class="row" id="ROW-2">
+  <div class="column">
+    <img src="assets/images/party/halloween.jpg" alt="Movie-1" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 97%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/party/neon.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 33%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/party/glow.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 78%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/party/rumbo.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 91%</p>
+    <hr>
+  </div>
+</div>
+
+<div class="row" id="ROW-3">
+  <div class="column">
+    <img src="assets/images/party/shake.jpg" alt="Movie-1" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 59%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/party/summer.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 31%</p>    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/party/pool.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 78%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/party/cocktail.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <p class="rating"> Popularity <i class="fa fa-glass" ></i> 71%</p>
+    <hr>
+  </div>
+</div>
+
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+</script>
+
+</body>
+</html>
+
+<app-global-footer></app-global-footer>

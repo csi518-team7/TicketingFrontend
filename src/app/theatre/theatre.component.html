@@ -1,0 +1,104 @@
+<app-global-header></app-global-header>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="body-page">
+
+<div style="text-align:center">
+  <h2 id="heading">Theatre-Gallery</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row" id="ROW-1">
+  <div class="column">
+    <img src="assets/images/theatre/alice.jpg" alt="Movie-1" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64%  &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 78%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/theatre/bells.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 87%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/theatre/bengal.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 68%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/theatre/birds.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 9%</p>
+    <hr>
+  </div>
+</div>
+
+<div class="row" id="ROW-2">
+  <div class="column">
+    <img src="assets/images/theatre/emperors.jpg" alt="Movie-1" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 66%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/theatre/failure.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 77%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/theatre/jungle.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64%  &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 33%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/theatre/king.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64%  &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 43%</p>
+    <hr>
+  </div>
+</div>
+
+<div class="row" id="ROW-3">
+  <div class="column">
+    <img src="assets/images/theatre/mouse.jpg" alt="Movie-1" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64%  &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 44%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/theatre/sherlock.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 99%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/theatre/this-house.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 14%</p>
+    <hr>
+  </div>
+  <div class="column">
+    <img src="assets/images/theatre/angels.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <p class="rating">Rating: <i class="fa fa-heart"></i> 64% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 23%</p>
+    <hr>
+  </div>
+</div>
+
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+</script>
+
+</body>
+</html>
+
+<app-global-footer></app-global-footer>

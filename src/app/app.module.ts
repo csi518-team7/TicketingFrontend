@@ -5,6 +5,7 @@ import { RouterModule } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { TodayEventsComponent } from "./today-events/today-events.component";
+import { GalleryComponent } from './gallery/gallery.component';
 import { SignUpComponent } from "./sign-up/sign-up.component";
 import { SearchResComponent } from "./search-res/search-res.component";
 import { CheckoutComponent } from "./checkout/checkout.component";
@@ -24,6 +25,9 @@ import { HomeAdvertisementComponent } from './home-advertisement/home-advertisem
 import { HomeEventCatComponent } from './home-event-cat/home-event-cat.component';
 import { HomeLiveVideoComponent } from './home-live-video/home-live-video.component';
 import { HomeMapComponent } from './home-map/home-map.component';
+
+import { TheatreComponent } from './theatre/theatre.component';
+import { PartiesComponent } from './parties/parties.component';
 import { PageSearchResultComponent } from './page-search-result/page-search-result.component';
 import { PageTodayEventsComponent } from './page-today-events/page-today-events.component';
 import { PageCheckoutComponent } from './page-checkout/page-checkout.component';
@@ -54,6 +58,10 @@ import { PageEventdetailsComponent } from './page-eventdetails/page-eventdetails
     HomeEventCatComponent,
     HomeLiveVideoComponent,
     HomeMapComponent,
+
+    GalleryComponent,
+    TheatreComponent,
+    PartiesComponent,
     PageSearchResultComponent,
     PageTodayEventsComponent,
     PageCheckoutComponent,
@@ -61,12 +69,19 @@ import { PageEventdetailsComponent } from './page-eventdetails/page-eventdetails
     PageCategoryComponent,
     CategoryCardComponent,
     PageEventdetailsComponent
+
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: "", component: HomepageComponent },
-      { path: "schedule", component: PageTodayEventsComponent },
+
+      { path: "schedule", component: TodayEventsComponent },
+      { path: "gallery", component: GalleryComponent},
+      { path: "parties", component: PartiesComponent},
+      { path: "theatre", component: TheatreComponent},
+      //{ path: "schedule", component: PageTodayEventsComponent },
+
       { path: "signup", component: SignUpComponent },
       { path: "login", component: LoginComponent },
       { path: "results", component: PageSearchResultComponent },

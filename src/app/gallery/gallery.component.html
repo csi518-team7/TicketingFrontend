@@ -1,0 +1,105 @@
+<app-global-header></app-global-header>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body id="body-page">
+
+    <div style="text-align:center">
+      <h2 id="heading">Now Showing</h2>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row" id="ROW-1">
+      <div class="column">
+        <img src="assets/images/jaws.jpg" alt="Movie-1" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 97% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 78%</p>
+
+        <hr>
+      </div>
+      <div class="column">
+        <img src="assets/images/baby-driver.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 54% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 58%</p>
+        <hr>
+      </div>
+      <div class="column">
+        <img src="assets/images/beauty-beast.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 44% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 68%</p>
+        <hr>
+      </div>
+      <div class="column">
+        <img src="assets/images/grimsby.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 91% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 98%</p>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row" id="ROW-2">
+      <div class="column">
+        <img src="assets/images/venom.jpg" alt="Movie-1" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 94%  &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 88%</p>
+        <hr>
+      </div>
+      <div class="column">
+        <img src="assets/images/ghostbusters.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 43%  &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 75%</p>
+        <hr>
+      </div>
+      <div class="column">
+        <img src="assets/images/the-assasin.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 77% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 86%</p>
+        <hr>
+      </div>
+      <div class="column">
+        <img src="assets/images/guy-ritchie.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 98% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 99%</p>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row" id="ROW-3">
+      <div class="column">
+        <img src="assets/images/star-wars.jpg" alt="Movie-1" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 97% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 58%</p>
+        <hr>
+      </div>
+      <div class="column">
+        <img src="assets/images/beauty-beast.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 84% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 78%</p>
+        <hr>
+      </div>
+      <div class="column">
+        <img src="assets/images/american-hustle.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 92% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 68%</p>
+        <hr>
+      </div>
+      <div class="column">
+        <img src="assets/images/scary-movie.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        <p class="rating">Rating: <i class="fa fa-heart"></i> 64% &nbsp;&nbsp; Popularity <i class="fa fa-globe" ></i> 78%</p>
+        <hr>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+
+  </body>
+</html>
+
+<app-global-footer></app-global-footer>

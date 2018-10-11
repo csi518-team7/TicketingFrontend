@@ -1,0 +1,106 @@
+img{
+  border-radius: 8px;
+  height: 325px;
+  width: 35%;
+  margin-left: 5px;
+  object-fit: fill;
+  padding-right: 15px;
+}
+
+#ROW-1, #ROW-2, #ROW-3{
+  max-width: 80%;
+  margin-left: 130px;
+  margin-bottom: 30px;
+}
+
+i.fa.fa-heart{
+  color: #dd0000;
+}
+i.fa.fa-glass{
+  color: #0000bc;
+  font-size: 12px;
+}
+
+.rating{
+  margin-top: 2px;
+  margin-left: 15px;
+  font-size: 11px;
+  margin-bottom: 0px;
+}
+
+hr{
+  margin: 2px;
+}
+
+.column{
+  padding: 20px;
+}
+
+#heading{
+  margin-bottom: 30px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 10px;
+  /*background-color: #aaaaaa;
+   */
+}
+
+#body-page{
+  margin-bottom: 300px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
