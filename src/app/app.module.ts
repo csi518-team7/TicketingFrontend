@@ -24,6 +24,13 @@ import { HomeAdvertisementComponent } from './home-advertisement/home-advertisem
 import { HomeEventCatComponent } from './home-event-cat/home-event-cat.component';
 import { HomeLiveVideoComponent } from './home-live-video/home-live-video.component';
 import { HomeMapComponent } from './home-map/home-map.component';
+import { PageSearchResultComponent } from './page-search-result/page-search-result.component';
+import { PageTodayEventsComponent } from './page-today-events/page-today-events.component';
+import { PageCheckoutComponent } from './page-checkout/page-checkout.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { PageCategoryComponent } from './page-category/page-category.component';
+import { CategoryCardComponent } from './category-card/category-card.component';
+import { PageEventdetailsComponent } from './page-eventdetails/page-eventdetails.component';
 
 
 @NgModule({
@@ -46,16 +53,26 @@ import { HomeMapComponent } from './home-map/home-map.component';
     HomeAdvertisementComponent,
     HomeEventCatComponent,
     HomeLiveVideoComponent,
-    HomeMapComponent
+    HomeMapComponent,
+    PageSearchResultComponent,
+    PageTodayEventsComponent,
+    PageCheckoutComponent,
+    PaginationComponent,
+    PageCategoryComponent,
+    CategoryCardComponent,
+    PageEventdetailsComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: "", component: HomepageComponent },
-      { path: "schedule", component: TodayEventsComponent },
+      { path: "schedule", component: PageTodayEventsComponent },
       { path: "signup", component: SignUpComponent },
       { path: "login", component: LoginComponent },
-      { path: "results", component: SearchResComponent },
+      { path: "results", component: PageSearchResultComponent },
+      { path: "checkout", component: PageCheckoutComponent },
+      { path: "category", component: PageCategoryComponent },
+      { path: "details", component: PageEventdetailsComponent },
       { path: "**", component: NotFoundComponent }
     ])
   ],
